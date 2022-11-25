@@ -47,8 +47,9 @@ import "../styles/global.css";
         alt=""
       />
     </div>
-    <div>
-      <h5>Sven Ager Stol</h5><p id="b2">Næste bud: 3600 DKK</p>
+    <div id="produkt_beskrivelse2">
+      <h5>Sven Ager Stol</h5>
+      <img src="/img/line.svg" alt="" /><p id="b2">Næste bud: 3600 DKK</p>
       <p id="b2">Vurdering: 4600 DKK</p>
     </div>
   </article>
@@ -185,6 +186,15 @@ import "../styles/global.css";
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
   }
+  #card_galleri p {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+
+  #produkt_beskrivelse2 img {
+    margin-left: 120px;
+  }
+
   #b1 {
     max-width: 1000px;
     font-family: "open-sans", sans-serif;
@@ -246,10 +256,15 @@ import "../styles/global.css";
     font-weight: 600;
     letter-spacing: var(--letter-spacing-header-3-label);
     font-size: var(--font-size-label-button);
+    color: var(--color-primary-blue-600);
+    margin-top: 20px;
+    margin-bottom: 6px;
   }
 
   #card_galleri h5 {
     text-align: center;
+    margin-top: 16px;
+    margin-bottom: 6px;
   }
   /* article {
     outline: 2px solid red;
