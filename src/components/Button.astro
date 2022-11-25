@@ -1,0 +1,114 @@
+---
+import "../styles/global.css";
+import "../../public/img/liste.svg";
+---
+
+<div>
+  <h4>Knapper</h4>
+  <button id="xl">XL knap</button>
+  <br />
+  <button id="stor">Stor knap</button>
+  <br />
+  <button id="lille">Lille knap</button>
+  <br />
+</div>
+
+<style>
+  div {
+    padding-left: var(--spacing-96);
+
+    padding-right: var(--spacing-96);
+  }
+  h4 {
+    padding-top: var(--spacing-32);
+    font-family: "open-sans", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: var(--color-primary-blue-700);
+    font-size: 24px;
+    padding-bottom: var(--spacing-16);
+  }
+  #xl {
+    font-family: "open-sans", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-primary-blue-700);
+    font-size: var(--font-size-label-button);
+    padding-bottom: var(--spacing-16);
+    letter-spacing: var(--letter-spacing-header-1-button);
+    padding: 12px 85px;
+    border-radius: var(--radius-cards-button);
+
+    height: 49px;
+    color: var(--color-accent-creme-300);
+    border-style: none;
+    background-color: var(--color-accent-orange);
+    margin-bottom: var(--spacing-16);
+  }
+
+  #stor:hover,
+  #lille:hover,
+  #xl:hover {
+    background-color: var(--color-secondary-green);
+  }
+
+  #stor {
+    font-family: "open-sans", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-primary-blue-700);
+    font-size: var(--font-size-label-button);
+    padding-bottom: var(--spacing-16);
+    letter-spacing: var(--letter-spacing-header-1-button);
+    padding: 10px 40px;
+    border-radius: var(--radius-cards-button);
+    margin-bottom: var(--spacing-16);
+    height: 44px;
+    color: var(--color-accent-creme-300);
+    border-style: none;
+    background-color: var(--color-accent-orange);
+  }
+
+  #ikon {
+    display: flex;
+    flex-direction: row;
+    font-family: "open-sans", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-primary-blue-700);
+    font-size: var(--font-size-label-button);
+    padding-bottom: var(--spacing-16);
+    letter-spacing: var(--letter-spacing-header-1-button);
+    text-align: center;
+    border-radius: var(--radius-cards-button);
+    margin-bottom: var(--spacing-16);
+
+    color: var(--color-accent-orange);
+    padding: 3px 2px;
+    background-color: transparent;
+    border-color: var(--color-accent-orange);
+    border: 2px solid;
+    gap: 6px;
+  }
+
+  #lille {
+    font-family: "open-sans", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-primary-blue-700);
+    font-size: 16px;
+    padding-bottom: var(--spacing-16);
+    letter-spacing: var(--letter-spacing-header-1-button);
+    padding: 6px 35px;
+    border-radius: var(--radius-cards-button);
+    margin-bottom: var(--spacing-16);
+    height: 44px;
+    color: var(--color-accent-creme-300);
+    border-style: none;
+    background-color: var(--color-accent-orange);
+  }
+  p {
+    margin: none;
+  }
+</style>

@@ -1,0 +1,46 @@
+---
+import "../styles/global.css";
+---
+
+<header>
+  <h5>Af Anita Niknam og Louise Lyngsø Thomsen</h5>
+  <div>
+    <h1>Lauritz.com - udvalgte komponenter</h1>
+  </div>
+</header>
+
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  header {
+    background-color: var(--color-primary-blue);
+    min-height: 202px;
+    grid-column: 1/4;
+  }
+
+  h5 {
+    font-family: "open-sans", sans-serif;
+    border-bottom: 1px solid #656d74;
+    letter-spacing: var(--letter-spacing-header-4-5);
+    font-size: var(--font-size-label-button);
+    color: var(--color-secondary-mint);
+    padding: var(--spacing-8);
+  }
+  h1 {
+    font-family: "montserrat", sans-serif;
+    font-size: var(--font-size-heading-2);
+    letter-spacing: var(--letter-spacing-header-1-button);
+    color: var(--color-secondary-mint);
+    font-weight: 700;
+
+    margin-top: var(--spacing-56);
+    padding-left: var(--spacing-96);
+    padding-right: var(--spacing-96);
+  }
+  div {
+    padding-bottom: var(--spacing-56);
+  }
+</style>

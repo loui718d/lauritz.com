@@ -1,0 +1,50 @@
+---
+import "../styles/global.css";
+---
+
+<div>
+  <h4>Overskrifter</h4>
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+</div>
+
+<style>
+  div {
+    padding-left: var(--spacing-96);
+    padding-right: var(--spacing-96);
+  }
+  h4 {
+    font-family: "open-sans", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: var(--color-primary-blue-700);
+    font-size: 24px;
+    padding-bottom: var(--spacing-16);
+  }
+  h1 {
+    font-family: "montserrat", sans-serif;
+    font-size: var(--font-size-heading-1);
+    letter-spacing: var(--letter-spacing-header-1-button);
+    color: var(--color-accent-orange);
+    font-weight: 700;
+    padding-bottom: var(--spacing-8);
+  }
+  h2 {
+    font-family: "montserrat", sans-serif;
+    font-size: var(--font-size-heading-2);
+    letter-spacing: var(--letter-spacing-header-3);
+    color: var(--color-primary-blue);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: var(--spacing-8);
+  }
+  h3 {
+    font-family: "open-sans", sans-serif;
+    font-size: var(--font-size-heading-3);
+    letter-spacing: var(--letter-spacing-header-3-label);
+    color: var(--color-primary-blue);
+    font-weight: 700;
+  }
+</style>

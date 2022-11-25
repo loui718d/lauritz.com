@@ -1,0 +1,285 @@
+---
+const { titel, beskrivelse, deluxe, variant } = Astro.props;
+import "../styles/global.css";
+import "../../public/img/reol1.jpg";
+import "../../public/img/nye_varer.svg";
+import "../../public/img/nye_varer.svg";
+import "../../public/img/lokation.svg";
+import "../../public/img/Ur.svg";
+import "../../public/img/ikke_gemt.svg";
+import "../../public/img/ikke_gemtvare.svg";
+import "../../public/img/deluxe.svg";
+import "../../public/img/stol.jpg";
+---
+
+<div id="padding_sider">
+  <h4>Cards</h4>
+  <article id="card_liste">
+    <div id="produkt_billede">
+      <img id="ny" src="../../public/img/nye_varer.svg" alt="" /><img
+        id="deluxe"
+        src="../../public/img/deluxe.svg"
+        alt=""
+      /><img id="reol" src="../../public/img/reol1.jpg" alt="" />
+    </div>
+    <div id="produkt_beskrivelse">
+      <h5>Poul Erik Reol</h5>
+      <p id="b2">
+        Poul Erik 1914-2007: Reolskab af fineret teak, 1960'erne. Monteret med
+        skydelåger og hylder. Mål. H. 90 B. 89 D. 42 cm.
+      </p>
+      <div id="pris">
+        <p id="b1">Næste bud: 3600 DKK</p>
+        <p id="b1">Vurdering: 4600 DKK</p>
+      </div>
+      <div id="lokation">
+        <img src="../../public/img/lokation.svg" alt="" /><p id="bb2">
+          DK, Herlev
+        </p>
+      </div>
+      <div id="tidoggem">
+        <div id="tid">
+          <img src="../../public/img/Ur.svg" alt="" /><p id="bb2">
+            18-12-2022 kl 12:56
+          </p>
+        </div><div id="gemvare">
+          <button
+            >Gem<img src="../../public/img/ikke_gemt.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </article>
+  <article id="card_galleri">
+    <div id="produkt_billede2">
+      <img id="ny2" src="../../public/img/nye_varer.svg" alt="" /><img
+        id="gem2"
+        src="../../public/img/ikke_gemtvare.svg"
+        alt=""
+      /><img id="deluxe2" src="../../public/img/deluxe.svg" alt="" /><img
+        id="stol"
+        src="../../public/img/stol.jpg"
+        alt=""
+      />
+    </div>
+    <div>
+      <h5>Sven Ager Stol</h5><p id="b2">Næste bud: 3600 DKK</p>
+      <p id="b2">Vurdering: 4600 DKK</p>
+    </div>
+  </article>
+</div>
+
+<!-- <article class={deluxe == true && "deluxe"} data-variant={variant}>
+  <h3>{titel}</h3>
+  <p>{beskrivelse}</p>
+  <img src="" alt="" />
+  {deluxe == true && <p>Deluxe</p>}
+</article> -->
+
+<style>
+  h4 {
+    padding-top: var(--spacing-16);
+    font-family: "open-sans", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: var(--color-primary-blue-700);
+    font-size: 24px;
+    padding-bottom: var(--spacing-16);
+  }
+  #produkt_billede {
+    display: grid;
+  }
+  #produkt_billede img {
+    grid-area: 1/1;
+  }
+  #reol {
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+
+  #produkt_beskrivelse {
+    margin-right: 16px;
+  }
+
+  #ny {
+    z-index: 1;
+    padding-top: 8px;
+    padding-left: 8px;
+  }
+
+  #ny2 {
+    z-index: 1;
+    padding-top: 8px;
+    padding-left: 8px;
+  }
+  #deluxe {
+    z-index: 1;
+    place-self: end start;
+    padding-bottom: 50px;
+  }
+
+  #deluxe2 {
+    z-index: 1;
+    place-self: end start;
+    padding-bottom: 20px;
+  }
+  #gem2 {
+    z-index: 1;
+    place-self: start end;
+    padding-top: 8px;
+    padding-right: 8px;
+  }
+
+  #pris {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-56);
+  }
+  #tid {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-8);
+    align-items: center;
+    margin-inline-end: auto;
+  }
+
+  #tid img {
+    max-height: 26px;
+  }
+  #lokation {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-8);
+    margin-top: 10px;
+    margin-left: -4px;
+  }
+  #gemvare {
+    place-self: end end;
+    align-items: flex-end;
+  }
+
+  #tidoggem {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #padding_sider {
+    background-color: var(--color-accent-creme);
+    padding-left: var(--spacing-96);
+    padding-right: var(--spacing-96);
+    padding-bottom: 30px;
+  }
+  #card_liste {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 934px;
+    max-height: 300px;
+    background-color: var(--color-secondary-mint);
+    border-radius: var(--radius-cards-button);
+    margin-bottom: 30px;
+  }
+
+  #card_galleri {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    max-width: 280px;
+    max-height: 350px;
+    background-color: var(--color-secondary-mint);
+    border-radius: var(--radius-cards-button);
+  }
+
+  #produkt_billede2 {
+    display: grid;
+  }
+  #produkt_billede2 img {
+    grid-area: 1/1;
+  }
+
+  #stol {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+  #b1 {
+    max-width: 1000px;
+    font-family: "open-sans", sans-serif;
+    font-weight: 500;
+    color: var(--color-primary-blue);
+    font-size: var(--font-size-body-1);
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  #bb2 {
+    max-width: 1000px;
+    font-family: "open-sans", sans-serif;
+    font-weight: 700;
+    color: var(--color-primary-blue-700);
+    font-size: var(--font-size-body-2);
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+
+  #b2 {
+    max-width: 1000px;
+    font-family: "open-sans", sans-serif;
+    font-weight: 500;
+    color: var(--color-primary-blue-400);
+    font-size: var(--font-size-body-2);
+    padding-bottom: 6px;
+    margin-right: 6px;
+    border-bottom: 1px solid #3f4851;
+    line-height: var(--line-height-body-2);
+  }
+
+  #card_galleri #b2 {
+    border: none;
+    text-align: center;
+  }
+
+  button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "open-sans", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-primary-blue-700);
+    font-size: var(--font-size-label-button);
+
+    letter-spacing: var(--letter-spacing-header-1-button);
+
+    border-radius: var(--radius-cards-button);
+    margin-bottom: var(--spacing-8);
+    height: 44px;
+    color: var(--color-accent-orange);
+    border-style: none;
+    background-color: transparent;
+  }
+
+  h5 {
+    font-family: "open-sans", sans-serif;
+    font-weight: 600;
+    letter-spacing: var(--letter-spacing-header-3-label);
+    font-size: var(--font-size-label-button);
+  }
+
+  #card_galleri h5 {
+    text-align: center;
+  }
+  /* article {
+    outline: 2px solid red;
+  }
+
+  .deluxe {
+    background-color: blue;
+  }
+  h3 {
+    background: coral;
+  }
+  [data-variant="primary"] {
+    background: var(--primary-card-bg);
+  }
+  [data-variant="secondary"] {
+    background: steelblue;
+  } */
+</style>

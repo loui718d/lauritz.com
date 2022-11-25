@@ -1,0 +1,51 @@
+---
+import Broedtekst from "../components/Broedtekst.astro";
+import Button from "../components/Button.astro";
+import Card from "../components/Card.astro";
+import Header from "../components/Header.astro";
+import Headings from "../components/Headings.astro";
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vyc5ben.css" />
+  </head>
+  <Header />
+  <body>
+    <main>
+      <Headings />
+      <Broedtekst />
+      <Button />
+      <Card />
+      <!-- <Card
+        deluxe={true}
+        titel="titel 1"
+        beskrivelse="Hej med dig"
+        variant="primary"
+      />
+      <Card
+        deluxe={false}
+        titel="titel 2"
+        beskrivelse="Hej med dig"
+        variant="primary"
+      /> -->
+    </main>
+  </body>
+
+  <style>
+    main {
+    }
+    body {
+      max-width: var(--media-query-max-width-desktop);
+      margin: 0;
+    }
+  </style>
+
+
+</html>
