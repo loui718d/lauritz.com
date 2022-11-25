@@ -1,26 +1,17 @@
 ---
 const { titel, beskrivelse, deluxe, variant } = Astro.props;
 import "../styles/global.css";
-import "../../public/img/reol1.jpg";
-import "../../public/img/nye_varer.svg";
-import "../../public/img/nye_varer.svg";
-import "../../public/img/lokation.svg";
-import "../../public/img/Ur.svg";
-import "../../public/img/ikke_gemt.svg";
-import "../../public/img/ikke_gemtvare.svg";
-import "../../public/img/deluxe.svg";
-import "../../public/img/stol.jpg";
 ---
 
 <div id="padding_sider">
   <h4>Cards</h4>
   <article id="card_liste">
     <div id="produkt_billede">
-      <img id="ny" src="../../public/img/nye_varer.svg" alt="" /><img
+      <img id="ny" src="/img/nye_varer.svg" alt="" /><img
         id="deluxe"
-        src="../../public/img/deluxe.svg"
+        src="/img/deluxe.svg"
         alt=""
-      /><img id="reol" src="../../public/img/reol1.jpg" alt="" />
+      /><img id="reol" src="/img/reol1.jpg" alt="" />
     </div>
     <div id="produkt_beskrivelse">
       <h5>Poul Erik Reol</h5>
@@ -33,32 +24,26 @@ import "../../public/img/stol.jpg";
         <p id="b1">Vurdering: 4600 DKK</p>
       </div>
       <div id="lokation">
-        <img src="../../public/img/lokation.svg" alt="" /><p id="bb2">
-          DK, Herlev
-        </p>
+        <img src="/img/lokation.svg" alt="" /><p id="bb2">DK, Herlev</p>
       </div>
       <div id="tidoggem">
         <div id="tid">
-          <img src="../../public/img/Ur.svg" alt="" /><p id="bb2">
-            18-12-2022 kl 12:56
-          </p>
+          <img src="/img/Ur.svg" alt="" /><p id="bb2">18-12-2022 kl 12:56</p>
         </div><div id="gemvare">
-          <button
-            >Gem<img src="../../public/img/ikke_gemt.svg" alt="" />
-          </button>
+          <button>Gem<img src="/img/ikke_gemt.svg" alt="" /></button>
         </div>
       </div>
     </div>
   </article>
   <article id="card_galleri">
     <div id="produkt_billede2">
-      <img id="ny2" src="../../public/img/nye_varer.svg" alt="" /><img
+      <img id="ny2" src="/img/nye_varer.svg" alt="" /><img
         id="gem2"
-        src="../../public/img/ikke_gemtvare.svg"
+        src="/img/ikke_gemtvare.svg"
         alt=""
-      /><img id="deluxe2" src="../../public/img/deluxe.svg" alt="" /><img
+      /><img id="deluxe2" src="/img/deluxe.svg" alt="" /><img
         id="stol"
-        src="../../public/img/stol.jpg"
+        src="/img/stol.jpg"
         alt=""
       />
     </div>
